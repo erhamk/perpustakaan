@@ -2,12 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_data extends CI_Model {
-    public function get_data()
+
+
+    public function getbuku()
     {
-        
-        $this->db->get('tb_buku');
-        $this->db->get('tb_anggota');
-        
+        return $this->db->get('tb_buku');
+    }
+    
+    public function getanggota()
+    {
+        return $this->db->get('tb_anggota');
     }
 
 }
