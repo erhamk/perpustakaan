@@ -48,5 +48,13 @@
 <script src="<?= base_url('assets/')?>dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('assets/')?>dist/js/pages/dashboard.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.table.table-datatable').DataTable();
+});
+
+</script>
 </body>
 </html>
